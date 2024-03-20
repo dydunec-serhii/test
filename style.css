@@ -1,15 +1,30 @@
-.schedule-body > tr:hover {
-    background-color: tomato;
-    color: white;
-  }
-  
-  /* Table styling */
-  .schedule {
-    border-collapse: collapse;
-  }
-  
-  .schedule th,
-  .schedule td {
-    padding: 8px;
-    border: 1px solid #212121;
-  }
+.text-box>h3 {
+  color: pink;
+}
+
+.greysol {
+  color: grey;
+}
+
+p {
+  color: green;
+}
+
+.yellow {
+  color: yellow;
+}
+
+div+p {
+  color: red;
+}
+
+.lesson :hover {
+  color: grey;
+}
+
+.start-finish :hover {
+  color: grey;
+}
+.red{
+  color: red;
+}
