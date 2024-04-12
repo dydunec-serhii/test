@@ -23,7 +23,7 @@
   font-style: normal;
 }
 
-.text-box>h3 {
+.text-box {
   color: pink;
 }
 
@@ -31,16 +31,8 @@
   color: grey;
 }
 
-p {
-  color: green;
-}
-
 .yellow {
   color: yellow;
-}
-
-div+p {
-  color: red;
 }
 
 .lesson :hover {
@@ -78,12 +70,23 @@ div+p {
 }
 .logo{
   background-color: blue;
-  border-width: 6
-  border-color;
-  border-radius;
+  border-width: 6;
+  border-left: 45;
   border: style darkblue;
   padding: 10px;
   padding-top: 0cqmin;
   padding-bottom: 10;
   margin-top: 50px;
+}
+h1{
+  background-color: green;
+  width: 350px;
+  top: 220px;
+  border: top 15px;
+ border: left 10px;
+ border: right 10px; 
+ border: bottom 20px;
+ margin: 30px;
+ border-style:red;
+ font-weight: 2px;
 }
