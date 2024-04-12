@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'Bitter-Medium';
+  src: url(Bitter-Medium.ttf);
+  src: url(Bitter-Medium.ttf) format("ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.lorem {
+  font-family: 'Bitter-Medium';
+}
+.rubik-scribble-regular {
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  text-align:center;
+}
+
+.h2-lorem {
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
 .text-box>h3 {
   color: pink;
 }
@@ -22,9 +47,43 @@ div+p {
   color: grey;
 }
 
-.start-finish :hover {
+.start-finish {
   color: grey;
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
-.red{
+
+.start-finish :hover {
   color: red;
+}
+.rubik-scribble-regula{
+  vertical-align: middle;
+  text-transform:;
+}
+.lorem{
+  text-indent: 25%;
+  white-space:pre;
+}
+.improve{
+ word-break:break-all;
+ text-align: center;
+ word-wrap: normal;
+}
+.lolik{
+  word-spacing: 10px;
+  letter-spacing: 2px;
+}
+.logo{
+  background-color: blue;
+  border-width: 6
+  border-color;
+  border-radius;
+  border: style darkblue;
+  padding: 10px;
+  padding-top: 0cqmin;
+  padding-bottom: 10;
+  margin-top: 50px;
 }
