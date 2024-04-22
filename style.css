@@ -81,12 +81,14 @@
 h1{
   background-color: green;
   width: 350px;
-  top: 220px;
-  border: top 15px;
+  height: 220px;
+ border: top 15px;
  border: left 10px;
  border: right 10px; 
  border: bottom 20px;
  margin: 30px;
- border-style:red;
- font-weight: 2px;
+ border-color: red;
+ border-style: dotted;
+ border-width: 2px;
+ 
 }
