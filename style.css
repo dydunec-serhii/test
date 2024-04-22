@@ -71,24 +71,3 @@
 .logo{
   background-color: blue;
   border-width: 6;
-  border-left: 45;
-  border: style darkblue;
-  padding: 10px;
-  padding-top: 0cqmin;
-  padding-bottom: 10;
-  margin-top: 50px;
-}
-h1{
-  background-color: green;
-  width: 350px;
-  height: 220px;
- border: top 15px;
- border: left 10px;
- border: right 10px; 
- border: bottom 20px;
- margin: 30px;
- border-color: red;
- border-style: dotted;
- border-width: 2px;
- 
-}
