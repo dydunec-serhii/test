@@ -71,3 +71,83 @@
 .logo{
   background-color: blue;
   border-width: 6;
+  :root {
+    --header-menu: #03A9F4;
+    --header-menu2: #7D7D7D;
+    --main-information: #B4AD9E;
+    --main-information2: #626262;
+}
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+.header-schrift {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.header-link {
+    width: 906px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+
+.header-menu {
+    display: flex;
+    gap: 100px;
+    padding-left: 0px;
+    justify-content: center;
+
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container {
+    width: 906px;
+    margin: 0 auto;
+}
+
+.main-color2 {
+    color: var(--main-information2);
+}
+
+.main-color {
+    color: var(--main-information);
+}
+
+.text2 :hover {
+    color: var(--header-menu);
+}
+
+.text {
+    list-style: none;
+    display: row;
+    overflow: 1px solid red;
+    /* width: 420px; */
+    color: var(--header-menu2);
+
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-list {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    gap: 65px;
+}
+
+.list-item {
+    width: 420px;
+    outline: 1px solid red;
+}
