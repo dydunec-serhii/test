@@ -1,153 +1,23 @@
-@font-face {
-  font-family: 'Bitter-Medium';
-  src: url(Bitter-Medium.ttf);
-  src: url(Bitter-Medium.ttf) format("ttf");
+
+*
+
+.flex-container {
+  display: flex;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-.lorem {
-  font-family: 'Bitter-Medium';
-}
-.rubik-scribble-regular {
-  font-family: "Rubik Scribble", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 20px;
-  text-align:center;
+.flex-item {
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
-.h2-lorem {
-  font-family: "Anton", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+.grow-2 {
+  flex-grow: 2;
 }
 
-.text-box {
-  color: pink;
+.grow-1 {
+  flex-grow: 1;
 }
 
-.greysol {
-  color: grey;
-}
-
-.yellow {
-  color: yellow;
-}
-
-.lesson :hover {
-  color: grey;
-}
-
-.start-finish {
-  color: grey;
-  font-family: "Truculenta", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-.start-finish :hover {
-  color: red;
-}
-.rubik-scribble-regula{
-  vertical-align: middle;
-  text-transform:;
-}
-.lorem{
-  text-indent: 25%;
-  white-space:pre;
-}
-.improve{
- word-break:break-all;
- text-align: center;
- word-wrap: normal;
-}
-.lolik{
-  word-spacing: 10px;
-  letter-spacing: 2px;
-}
-.logo{
-  background-color: blue;
-  border-width: 6;
-  :root {
-    --header-menu: #03A9F4;
-    --header-menu2: #7D7D7D;
-    --main-information: #B4AD9E;
-    --main-information2: #626262;
-}
-.ubuntu-light {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-.header-schrift {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.header-link {
-    width: 906px;
-    margin: 0 auto;
-    outline: 1px solid red;
-}
-
-.header-menu {
-    display: flex;
-    gap: 100px;
-    padding-left: 0px;
-    justify-content: center;
-
-}
-
-.container a {
-    text-decoration: none;
-}
-
-.container {
-    width: 906px;
-    margin: 0 auto;
-}
-
-.main-color2 {
-    color: var(--main-information2);
-}
-
-.main-color {
-    color: var(--main-information);
-}
-
-.text2 :hover {
-    color: var(--header-menu);
-}
-
-.text {
-    list-style: none;
-    display: row;
-    overflow: 1px solid red;
-    /* width: 420px; */
-    color: var(--header-menu2);
-
-}
-
-.card-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flex-list {
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 0px;
-    gap: 65px;
-}
-
-.list-item {
-    width: 420px;
-    outline: 1px solid red;
+.grow-0 {
+  flex-grow: 0;
 }
