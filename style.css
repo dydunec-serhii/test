@@ -1,23 +1,38 @@
-
-*
-
-.flex-container {
+.item {
   display: flex;
+  background-color: brown;
+  width: 300px;
+  height: 50px;
+
+}
+.container{
+  width: 600px;
+}
+.item-1 {
+  background-color: yellow;
+  width: 300px;
+  height: 50px;
 }
 
-.flex-item {
-  border: 1px solid #ccc;
-  padding: 10px;
+.item-2 {
+  background-color: blueviolet;
+  width: 200px;
+  height: 50px;
 }
 
-.grow-2 {
-  flex-grow: 2;
+.item-3 {
+  background-color: aqua;
+  width: 200px;
+  height: 50px;
 }
-
-.grow-1 {
-  flex-grow: 1;
+.item-4{
+  background-color: green;
+  width: 200px;
+  height: 50px;
+  flex-wrap: wrap;
 }
-
-.grow-0 {
-  flex-grow: 0;
+.holder{
+  display: flex;
+  flex-wrap: wrap;
+  outline: 10px solid black;
 }
