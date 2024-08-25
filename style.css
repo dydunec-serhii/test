@@ -8,7 +8,7 @@
 
 }
 
-.container{
+.container {
   width: 960px;
 }
 
@@ -57,19 +57,145 @@
   background-color: blue;
   margin-top: 200px;
 }
-.ul-listen{
 
+.ul-listen {}
+
+.after ::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: contain;
 }
-.after ::after{
-content:"";
-width: 30px;
-height: 30px;
-background-size:contain ;
-}
-.after::after{
+
+.after::after {
   display: none;
-  background-image:url(bobiks);
+  background-image: url(bobiks);
 }
-.after:hover::after{
+
+.after:hover::after {
   display: block;
 }
+
+.bg-box {
+  width: 1100px;
+  height: 650px;
+  background-color: green;
+  background-image: ;
+}
+
+.top {
+  background-image: linear-gradient   top (green);
+  }
+  .asdf{
+    background-image: linear-gradient(#f44336 15%,
+    #09792b 40%,
+    #00b9ff 65%,
+    #ffb800);
+  }
+  .oalach{
+    background-image: repeating-linear-gradient(top
+    #00b9ff
+    #ffb800 20px,
+    #00b9ff 20px,
+    #ffb800 40px
+    );
+    
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box {
+    height: 190px;
+    width: calc(50% - 20px);
+    margin: 10px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+  /* bgi -> bgr -> bgp -> bgs */
+  /* cat */
+  .box:nth-child(1) {
+    background-color: #9c27b0;
+    background-image: url("images/boy.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+  }
+  /* bird */
+  .box:nth-child(2) {
+    background-color: #009688;
+    background-image: url("images/big-boy.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 50px;
+  }
+  /* dog */
+  .box:nth-child(3) {
+    background-size: 80px;
+    background-color: skyblue;
+    background-image: url("images/bird.png");
+    background-repeat: repeat-y;
+    background-position: left;
+  }
+  /* turtle */
+  .box:nth-child(4) {
+    background-size: 50px;
+    background-color: #3f51b5;
+    background-image: url("images/flower.png");
+  }
+  .overlay {
+    max-width: 1600px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid black;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 0, 25, 0.3),
+        rgba(0, 255, 0, 0.2)
+      ),
+      url("images/fish.jpg");
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .list-item {
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  
+  .list-item::before {
+    content: "";
+    height: 120px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .list-item:nth-child(1)::before {
+    background-image: url("../images/mobile-icon.svg");
+  }
+  
+  .list-item:nth-child(2)::before {
+    background-image: url("../images/dog.png");
+  }
+  
+  .list-item:nth-child(3)::before {
+    background-image: url("../images/cat.png");
+  }
