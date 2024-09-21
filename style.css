@@ -199,3 +199,98 @@
   .list-item:nth-child(3)::before {
     background-image: url("../images/cat.png");
   }
+    .content {
+      padding: 50px;
+    }
+  
+    .content-circle {
+      height: 100px;
+      width: 100px;
+      background-color: cornflowerblue;
+      border-radius: 50%;
+      position: relative;
+      left: 0;
+  
+  
+      animation-name: white-circle;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  
+    .content:hover .content-circle {
+      animation-play-state: paused;
+    }
+  
+    @keyframes white-circle {
+      0% {
+        left: 0;
+      }
+  
+      50% {
+        border-radius: 0;
+  
+      }
+  
+      100% {
+        left: 500px;
+  
+      }
+    }
+        .container {
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+        }
+    
+        .box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100px;
+          height: 100px;
+          border: 1px solid #212121;
+          border-radius: 5px;
+          background-color: #fff;
+          font-family: sans-serif;
+          text-align: center;
+        }
+    
+        .box:hover {
+          animation-name: changeBgColor;
+          animation-duration: 3s;
+          animation-timing-function: linear;
+          animation-delay: 1s;
+        }
+    
+        .box:nth-child(1) {
+          /* Default value  */
+          animation-fill-mode: none;
+        }
+    
+        .box:nth-child(2) {
+          animation-fill-mode: forwards;
+        }
+    
+        .box:nth-child(3) {
+          animation-fill-mode: backwards;
+        }
+    
+        .box:nth-child(4) {
+          animation-fill-mode: both;
+        }
+    
+        @keyframes changeBgColor {
+          0% {
+            background-color: teal;
+          }
+    
+          50% {
+            background-color: orange;
+          }
+    
+          100% {
+            background-color: deepskyblue;
+          }
+        }
