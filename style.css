@@ -1,4 +1,4 @@
-.item {
+/* /* .item {
   display: flex;
   background-color: brown;
   width: 460px;
@@ -118,7 +118,7 @@
   }
   /* bgi -> bgr -> bgp -> bgs */
   /* cat */
-  .box:nth-child(1) {
+  /* .box:nth-child(1) {
     background-color: #9c27b0;
     background-image: url("images/boy.png");
     background-repeat: no-repeat;
@@ -126,171 +126,80 @@
     background-size: 100px;
   }
   /* bird */
-  .box:nth-child(2) {
-    background-color: #009688;
-    background-image: url("images/big-boy.png");
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-size: 50px;
-  }
-  /* dog */
-  .box:nth-child(3) {
-    background-size: 80px;
-    background-color: skyblue;
-    background-image: url("images/bird.png");
-    background-repeat: repeat-y;
-    background-position: left;
-  }
-  /* turtle */
-  .box:nth-child(4) {
-    background-size: 50px;
-    background-color: #3f51b5;
-    background-image: url("images/flower.png");
-  }
-  .overlay {
-    max-width: 1600px;
-    height: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 1px solid black;
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 0, 25, 0.3),
-        rgba(0, 255, 0, 0.2)
-      ),
-      url("images/fish.jpg");
-  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .list {
-    display: flex;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .list-item {
-    width: 350px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 1px 3px rgba(0, 0, 0, 0.12);
-  }
-  
-  .list-item::before {
-    content: "";
-    height: 120px;
-    display: block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .list-item:nth-child(1)::before {
-    background-image: url("../images/mobile-icon.svg");
-  }
-  
-  .list-item:nth-child(2)::before {
-    background-image: url("../images/dog.png");
-  }
-  
-  .list-item:nth-child(3)::before {
-    background-image: url("../images/cat.png");
-  }
-    .content {
-      padding: 50px;
+    * {
+      box-sizing: border-box;
     }
   
-    .content-circle {
-      height: 100px;
-      width: 100px;
-      background-color: cornflowerblue;
-      border-radius: 50%;
-      position: relative;
-      left: 0;
-  
-  
-      animation-name: white-circle;
-      animation-duration: 2s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
+    body {
+      margin: 0;
+      font-family: sans-serif;
     }
   
-    .content:hover .content-circle {
-      animation-play-state: paused;
+    /* Common container styles. */
+    .container {
+      min-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #ffc107;
+  
+      /*  Text styles  */
+      text-align: center;
+      line-height: 180px;
+      font-size: 32px;
+      white-space: nowrap;
     }
   
-    @keyframes white-circle {
-      0% {
-        left: 0;
+    /* Set the maximum width of the responsive container. */
+    .container.responsive {
+      max-width: 1140px;
+      margin-bottom: 40px;
+    }
+  
+    /* Set the base width of a adaptive container. */
+    .container.adaptive {
+      max-width: 400px;
+    }
+  
+    @media screen and (min-width: 600px) {
+      .container {
+        background-color: #00bcd4;
       }
   
-      50% {
-        border-radius: 0;
+      /* Change the current width of the adaptive container at each breakpoint. */
+      .container.adaptive  {
+        max-width: 600px;
+      }
+ .responsive{
+font-size: 20px;
+color: black;
+transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+transition-property: background-color;
+transition-duration: 2s;
+ }
+    }
   
+    @media screen and (min-width: 900px) {
+      .container {
+        background-color: #8bc34a;
       }
   
-      100% {
-        left: 500px;
-  
+      /* Change the current width of the adaptive container at each breakpoint. */
+      .container.adaptive {
+        max-width: 900px;
       }
     }
-        .container {
-          display: flex;
-          justify-content: center;
-          gap: 5px;
-        }
-    
-        .box {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100px;
-          height: 100px;
-          border: 1px solid #212121;
-          border-radius: 5px;
-          background-color: #fff;
-          font-family: sans-serif;
-          text-align: center;
-        }
-    
-        .box:hover {
-          animation-name: changeBgColor;
-          animation-duration: 3s;
-          animation-timing-function: linear;
-          animation-delay: 1s;
-        }
-    
-        .box:nth-child(1) {
-          /* Default value  */
-          animation-fill-mode: none;
-        }
-    
-        .box:nth-child(2) {
-          animation-fill-mode: forwards;
-        }
-    
-        .box:nth-child(3) {
-          animation-fill-mode: backwards;
-        }
-    
-        .box:nth-child(4) {
-          animation-fill-mode: both;
-        }
-    
-        @keyframes changeBgColor {
-          0% {
-            background-color: teal;
-          }
-    
-          50% {
-            background-color: orange;
-          }
-    
-          100% {
-            background-color: deepskyblue;
-          }
-        }
+  
+    @media screen and (min-width: 1140px) {
+      .container {
+        background-color: #ff5252;
+      }
+  
+      /* Change the current width of the adaptive container at each breakpoint. */
+      .container.adaptive {
+        max-width: 1140px;
+      }
+    }
+  
+    .container .label {
+      margin-top: 0;
+    }
