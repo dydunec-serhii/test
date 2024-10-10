@@ -30,6 +30,7 @@ a {
     text-decoration: none;
 }
 
+
 a:hover {
     background: var(--clr);
     box-shadow: 0 0 10px var(--clr),
