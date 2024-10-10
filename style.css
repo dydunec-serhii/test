@@ -1,205 +1,91 @@
-/* /* .item {
-  display: flex;
-  background-color: brown;
-  width: 460px;
-  height: 50px;
-  order: 1;
+/* Copyright (c) 2024 by Morteza (https://codepen.io/mortezasharifinia/pen/zYdRmjL) */
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
-  width: 960px;
-}
-
-
-.item-1 {
-  background-color: yellow;
-  width: 300px;
-  height: 50px;
-  order: 4;
-
-}
-
-.item-2 {
-  background-color: blueviolet;
-  width: 200px;
-  height: 50px;
-  order: 3;
-}
-
-.item-3 {
-  background-color: aqua;
-  width: 200px;
-  height: 50px;
-  order: 5;
-}
-
-.item-4 {
-  background-color: green;
-  width: 500px;
-  height: 50px;
-  flex-wrap: wrap;
-  order: 2;
-}
-
-.holder {
-  display: flex;
-  flex-wrap: wrap;
-  outline: 10px solid black;
-  justify-content: center;
-}
-
-.element {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-color: blue;
-  margin-top: 200px;
-}
-
-.ul-listen {}
-
-.after ::after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-size: contain;
-}
-
-.after::after {
-  display: none;
-  background-image: url(bobiks);
-}
-
-.after:hover::after {
-  display: block;
-}
-
-.bg-box {
-  width: 1100px;
-  height: 650px;
-  background-color: green;
-  background-image: ;
-}
-
-.top {
-  background-image: linear-gradient   top (green);
-  }
-  .asdf{
-    background-image: linear-gradient(#f44336 15%,
-    #09792b 40%,
-    #00b9ff 65%,
-    #ffb800);
-  }
-  .oalach{
-    background-image: repeating-linear-gradient(top
-    #00b9ff
-    #ffb800 20px,
-    #00b9ff 20px,
-    #ffb800 40px
-    );
-    
-  }
-  .container {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .box {
-    height: 190px;
-    width: calc(50% - 20px);
-    margin: 10px;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 1px 3px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-  }
-  /* bgi -> bgr -> bgp -> bgs */
-  /* cat */
-  /* .box:nth-child(1) {
-    background-color: #9c27b0;
-    background-image: url("images/boy.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100px;
-  }
-  /* bird */
-    * {
-      box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    background: #0e1538;
+}
+
+a {
+    position: relative;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 40px;
+    transition: 1s;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+a:hover {
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+                0 0 30px var(--clr),
+                0 0 60px var(--clr),
+                0 0 100px var(--clr);
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 400%;
+    background: var(--clr);
+    transition: 1s;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.33s * var(--i));
+}
+
+a:hover::before {
+    width: 120%;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
     }
-  
-    body {
-      margin: 0;
-      font-family: sans-serif;
+    100% {
+        transform: rotate(360deg);
     }
-  
-    /* Common container styles. */
-    .container {
-      min-width: 320px;
-      margin-left: auto;
-      margin-right: auto;
-      background-color: #ffc107;
-  
-      /*  Text styles  */
-      text-align: center;
-      line-height: 180px;
-      font-size: 32px;
-      white-space: nowrap;
-    }
-  
-    /* Set the maximum width of the responsive container. */
-    .container.responsive {
-      max-width: 1140px;
-      margin-bottom: 40px;
-    }
-  
-    /* Set the base width of a adaptive container. */
-    .container.adaptive {
-      max-width: 400px;
-    }
-  
-    @media screen and (min-width: 600px) {
-      .container {
-        background-color: #00bcd4;
-      }
-  
-      /* Change the current width of the adaptive container at each breakpoint. */
-      .container.adaptive  {
-        max-width: 600px;
-      }
- .responsive{
-font-size: 20px;
-color: black;
-transition: cubic-bezier(0.165, 0.84, 0.44, 1);
-transition-property: background-color;
-transition-duration: 2s;
- }
-    }
-  
-    @media screen and (min-width: 900px) {
-      .container {
-        background-color: #8bc34a;
-      }
-  
-      /* Change the current width of the adaptive container at each breakpoint. */
-      .container.adaptive {
-        max-width: 900px;
-      }
-    }
-  
-    @media screen and (min-width: 1140px) {
-      .container {
-        background-color: #ff5252;
-      }
-  
-      /* Change the current width of the adaptive container at each breakpoint. */
-      .container.adaptive {
-        max-width: 1140px;
-      }
-    }
-  
-    .container .label {
-      margin-top: 0;
-    }
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    background: #0e1538;
+    inset: 4px;
+    transition: 0.5s;
+}
+
+a:hover::after {
+    background: var(--clr);
+}
+
+a span {
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+    color: #fff;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.5s;
+}
+
+a:hover span {
+    opacity: 1;
+    color: #0e1538;
+}
