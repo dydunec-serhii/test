@@ -34,9 +34,9 @@ a {
 a:hover {
     background: var(--clr);
     box-shadow: 0 0 10px var(--clr),
-                0 0 30px var(--clr),
-                0 0 60px var(--clr),
-                0 0 100px var(--clr);
+            0 0 30px var(--clr),
+            0 0 60px var(--clr),
+            0 0 100px var(--clr);
 }
 
 a::before {
