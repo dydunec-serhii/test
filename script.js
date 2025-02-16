@@ -15,3 +15,19 @@ if (question) {
 } else {
     alert("Дію відмінено!")
 }
+const install = confirm("встановити");
+console.log("install");
+if (install) {
+    alert("встановлення відбуваєтся")
+    const ask = confirm("цей файл може нашкодити вашому пк..");
+    console.log("ask");
+    if (ask) {
+        alert("загрозу усунено")
+        alert("програму встановлено")
+        alert("дякуюємо за довіру!!")
+    } else {
+        alert("дію відмінено")
+    }
+} else {
+    alert("дію відмінено:(")
+}  
