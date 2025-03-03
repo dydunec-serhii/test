@@ -199,5 +199,9 @@ if (withdrawal > 0 && withdrawal <= balance) {
 } else {
     alert("Некоректна сума зняття!");
 }
-
+alert()
 alert("Дякуємо, що скористалися банкоматом!");
+alert ("привіт як тебе зввати");
+const text = prompt("привіт як тебе звати?");
+console.log("alert")
+
