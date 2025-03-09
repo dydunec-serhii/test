@@ -186,22 +186,92 @@
 //     alert("ви не знаєте ECMAScript???")
 // }
 
-let balance = 1000;
-let withdrawal = parseFloat(prompt("Введіть суму для зняття: ")) || 0;
+// let balance = 1000;
+// let withdrawal = parseFloat(prompt("Введіть суму для зняття: ")) || 0;
 
-alert(`Ви хочете зняти ${withdrawal} гривень. Перевіряємо доступні кошти...`);
+// alert(`Ви хочете зняти ${withdrawal} гривень. Перевіряємо доступні кошти...`);
 
-if (withdrawal > 0 && withdrawal <= balance) {
-    balance -= withdrawal;
-    alert(`Операція успішна! Ви зняли ${withdrawal} гривень. Залишок на рахунку: ${balance} кредитів.`);
-} else if (withdrawal > balance) {
-    alert("Недостатньо коштів на рахунку!");
-} else {
-    alert("Некоректна сума зняття!");
-}
-alert()
-alert("Дякуємо, що скористалися банкоматом!");
-alert ("привіт як тебе зввати");
-const text = prompt("привіт як тебе звати?");
-console.log("alert")
+// if (withdrawal > 0 && withdrawal <= balance) {
+//     balance -= withdrawal;
+//     alert(`Операція успішна! Ви зняли ${withdrawal} гривень. Залишок на рахунку: ${balance} кредитів.`);
+// } else if (withdrawal > balance) {
+//     alert("Недостатньо коштів на рахунку!");
+// } else {
+//     alert("Некоректна сума зняття!");
+// }
 
+// alert("Дякуємо, що скористалися банкоматом!");
+
+
+
+// let balance = 1000;
+// let withdrawal = parseFloat(prompt("введіть суму ля зняття: ")) || 0;
+// let cont = 10;
+// cont --
+// cont --
+// cont -
+// cont +
+// console.log(cont);\\
+
+
+// const name = maksim;
+// const age = 16;
+// const goodoob = false;
+// const fewMney = false;
+// const motivation = true;
+// const time = true;
+//  if (name !== 'const') {
+//     console.log('ви не максим, покиличте його');
+//  }  else if (age <16) {
+//   console.log('максим не готовий до дорослого життя');
+//  } else if ( 
+//     !goodoob || 
+//     !fewMney ||
+//     motivation && time ) {
+//     console.log('максиму треба ачити вронтенд ');
+//  } else{
+//     console.log('ну ти крутий пипа');
+//  }
+// let cont = 0;
+
+// while (cont < 10) {
+//     console.log(cont);
+//     cont++
+// }
+// for (let i = 0; i < 10; i++) {
+//     console.log(i)
+// }
+// function logHello() {
+//     console.log('hello');
+// }
+// logHello()
+// logHello()
+
+// logHello()
+// logHello()
+// let cost;
+// const 
+// switch (subscription) {
+//     case 'free':
+//         cost = 0;
+//         break;
+//     case 'pro':
+//         cost = 100;
+//         break;
+//     case 'premium':
+//         cost = 1000;
+//         break;
+//         default:
+//         console.log(subscription);
+// }
+if(browser == 'Edge') {
+    p.textContent = "You've got the Edge!";
+  } else if (browser == 'Chrome'
+   || browser == 'Firefox'
+   || browser == 'Safari'
+   || browser == 'Opera') {
+    p.textContent = 'Ми підтримуємо і ці браузери' ;
+  } else {
+    p.textContent =  'Маємо надію, що ця сторінка виглядає добре!' ;
+  }
+ 
