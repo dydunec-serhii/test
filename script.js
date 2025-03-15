@@ -1,277 +1,94 @@
-// const x = Number(prompt("Введіть перше число:"));
-// const y = Number(prompt("Введіть друге число:"));
 
-// alert(x + " + " + y + " = " + (x + y));
-
-// const first = Number(prompt("first number"));
-// const second = Number(prompt("second number"));
-// alert(first + "-" + second + "=" + (first - second));
-
-// const z = Number(prompt("first number"));
-// const r = Number(prompt("second number"));
-
-// alert(z + "*" + r + "=" + (z * r));
-
-// const p = Number(prompt("first number"));
-// const o = Number(prompt("second number"));
-
-// alert(p + "/" + o + "=" + (p / o));
-// const message = 'Mango ' + 'is' + ' happy';
-// console.log("message");
-// const text = 'hello' + 'my' + 'brother';
-// console.log("text");
-// const paint = 'this' + 'is' + 'my' + 'weBsite';
-// console.log("paint");
-// let result;
-// result = 5 + '5';
-// console.log(result);
-// typeof result;
-// console.log(typeof result);
-// result = 5 + '5' + 5;
-// console.log(result);
-// typeof result;
-// console.log(typeof result);
-// result = 5 + 5 + '5';
-// const message = 'Welcome to Bahamas!';
-// console.log(message.length);
-// const message2 = 'Welcome to Yhersko';
-// console.log(message.toUpperCase());
-// console.log(message.indexOf('Dnipro'));
-// console.log(message.includes('welcome'));
-// console.log(message.startsWith('Wel'));
-// console.log(message.endsWith('!'));
-// const message =
-//     'My name is ' + name + ", I'm " + age + ' years old and ' + mood + 'happy';
-// console.log(message);
-
-// const name = 'serhiy';
-// const age = 15;
-// const mood = 'happy';
-
-// const sameMessage = `My name is ${name}, I'm ${age} years old and ${mood}.`;
-// console.log(sameMessage);
-// const text = prompt("your name")
-// console.log(text.trim());
-// const firstName = 'dudines sergiy';
-// console.log(firstName.length);
-// const name = 'serhiy';
-// const age = '16';
-// const mood = 'so good'
-// const firstName = 'dudines'
-// const name = 'serhiy';
-// console.log(name.toUpperCase());
-// const firstNAme = 'dudines sergiy';
-// console.log(firstNAme.indexOf(s));
-// const name = 'гість';
-// const hotel = 'готель'
-// const x = 'x';
-// const y = 'y';
-// const g = 'g';
-// const n = 'n';
-// console.log(name + x + y + g + hotel + n );
-// const text = prompt("type your name");
-// console.log(text.indexOf());
-// console.log("textOnlySerhiy");
-// const blacklistedWord1 = 'спам';
-// const blacklistedWord2 = 'розпродаж';
-
-// const string1 = 'Привіт, я Ілон Маск, це не спам, пропоную тобі мільйон!';
-// const string2 = 'Найбільший РОЗПРОДАЖ цього тижня, не пропустіть!';
-// const string3 = 'Рекламна кампанія #jsIsAwesome';
-
-// function checkForBlacklistedWords(text) {
-//     const lowerText = text.toLowerCase();
-//     return lowerText.includes(blacklistedWord1) || lowerText.includes(blacklistedWord2);
+// const lang = prompt('введіть вашу мову');
+// switch (true) {
+//   case ua:
+//     console.log(December);
+//     break;
+//   case en:
+//     console.log(October);
+//     break;
+//   case ru:
+//     console.log(November);
+//     break;
+//   case fr:
+//     console.log(Jenuary);
+//     break;
+//   default:
+//     console.log('your language is nit indefinded');
 // }
-
-// // Перевіряємо всі рядки
-// console.log(checkForBlacklistedWords(string1));
-// console.log(checkForBlacklistedWords(string2));
-// console.log(checkForBlacklistedWords(string3));
-//логічне I !
-// const num = 20; //true //false
-// const result = num > 10 && num < 30;
-// console.log(result);
-//логічне або !
-// const num = 15;
-// const result = num < 10 || num > 30;
-// console.log(result);
-// console.log(!true);
-// console.log(!false);
-// console.log(!1);
-// console.log(!0);
-/*
-* Логічне І (оператор &&)
-* - Запинається на брехні
-* - Повертає те на чому запнулось або останній операнд
-*/
-
-
-// console.log(1 && 4 && 7 && 'mango');
-
-
-/*
- * Логічне АБО (оператор ||)
- * - Запинаєтьс на правді
- * - Повертає те на чому запнулось або останній операнд
- */
-
-
-// console.log("name" || "" || null || 0 || undefined);
-
-/*
- * Логічне НІ (оператор !)
- * Робить інверсію правда > брехня та брехня > правда
- */
-// let cost = 0;
-// const subscription = 'free';
-
-// if (subscription === 'pro') {
-//     cost = 100;
+// ПЕРШЕ ЗАВДАННЯ
+// const drink = prompt("виберіть чай каву чи сік");
+// switch (drink) {
+//   case 'tea':
+//     console.log('нате пийте свій чайок');
+//   break;
+//   case 'coffe':
+//     console.log('нате пийте свою каву');
+//     break;
+//     case 'juce':
+//       console.log('нате пийте свій сік');
+//       break;
+//       default:
+//         console.log('такого напію немає в меню :(');
 // }
-
-
-// const text = confirm("напиши своє імя")
-// console.log(text);
-// if (text) {
-//     prompt("твоє імя")
-// } else {
-//     alert("ех ну ладно")
+// ДРУГЕ ЗАВДАННЯ
+// const week = prompt("введіть назву вашого дня!");
+// switch (week) {
+//   case 'понеділок':
+//   case 'вівторок':
+//   case 'середа':
+//   case 'четвер':
+//   case 'пятниця':
+//     console.log("ваш день робочий!");
+//     break;
+//   case 'субота':
+//   case 'неділя':
+//     console.log("ваш день вихіддний!");
+//     break;
+//   default:
+//     console.log("вашого дня не знайдено :(");
 // }
-// let cost;
-// const subscription = 'premium';
-
-// if (subscription === 'free') {
-//     cost = 0;
-// } else if (subscription === 'pro') {
-//     cost = 100;
-// } else if (subscription === 'premium') {
-//     cost = 500;
-// } else {
-//     console.log('Invalid subscription type');
+// ТРЕТЄ ЗАВДАННЯ
+// const month = 12;
+// switch (month) {
+//   case 12:
+//   case 1:
+//   case 2:
+//     console.log('зима');
+//     break;
+//   case 3:
+//   case 4:
+//   case 5:
+//     console.log('весна');
+//     break;
+//   case 6:
+//   case 7:
+//   case 8:
+//     console.log('літо');
+//     break;
+//   case 9:
+//   case 10:
+//   case 11:
+//     console.log('осінь');
+//     break;
+//   default:
+//     console.log('ми не знайшли ваш місяць :(');
+//     break;
 // }
-// const text = confirm("напиши ноиер твоєї карти");
-// console.log(text);
-// if (text) {
-//     prompt("твій cvv код")
-//     alert("от бачиш все було просто")
-// } else {
-//     alert("мені всеодно ти мусиш написати твій cvv код")
-//     prompt("давай пиши!!!!")
-//     alert("от бачиш все було просто")
-
+// ЧЕТВЕРТЕ ЗАВДАННЯ
+// const color = prompt("введіть свй колір");
+// switch (color) {
+//   case 'red':
+//     console.log("стояти");
+//     break;
+//   case 'orange':
+//     console.log("приготуйтесь");
+//     break;
+//   case 'green':
+//     console.log("можете рушати!");
+//     break;
+//   default:
+//     console.log("ми не знайли вашого світлофора");
+//     break;
 // }
-// let type;
-// const age = 20;
-
-
-// if (age >= 18) {
-//     type = 'adult';
-// } else {
-//     type = 'child';
-// }
-// let type;
-// const age = 20;
-// if (age) {
-//     console.log(Number(age >= 18));
-// }
-// let type;
-// const type2 = prompt("введіть назву javaScript")
-// console.log(type === ECMAScript);
-// if (type2) {
-//     type = "ok";
-//     document.write("ECMAScript")
-// } else {
-//     type = "no";
-//     alert("ви не знаєте ECMAScript???")
-// }
-
-// let balance = 1000;
-// let withdrawal = parseFloat(prompt("Введіть суму для зняття: ")) || 0;
-
-// alert(`Ви хочете зняти ${withdrawal} гривень. Перевіряємо доступні кошти...`);
-
-// if (withdrawal > 0 && withdrawal <= balance) {
-//     balance -= withdrawal;
-//     alert(`Операція успішна! Ви зняли ${withdrawal} гривень. Залишок на рахунку: ${balance} кредитів.`);
-// } else if (withdrawal > balance) {
-//     alert("Недостатньо коштів на рахунку!");
-// } else {
-//     alert("Некоректна сума зняття!");
-// }
-
-// alert("Дякуємо, що скористалися банкоматом!");
-
-
-
-// let balance = 1000;
-// let withdrawal = parseFloat(prompt("введіть суму ля зняття: ")) || 0;
-// let cont = 10;
-// cont --
-// cont --
-// cont -
-// cont +
-// console.log(cont);\\
-
-
-// const name = maksim;
-// const age = 16;
-// const goodoob = false;
-// const fewMney = false;
-// const motivation = true;
-// const time = true;
-//  if (name !== 'const') {
-//     console.log('ви не максим, покиличте його');
-//  }  else if (age <16) {
-//   console.log('максим не готовий до дорослого життя');
-//  } else if ( 
-//     !goodoob || 
-//     !fewMney ||
-//     motivation && time ) {
-//     console.log('максиму треба ачити вронтенд ');
-//  } else{
-//     console.log('ну ти крутий пипа');
-//  }
-// let cont = 0;
-
-// while (cont < 10) {
-//     console.log(cont);
-//     cont++
-// }
-// for (let i = 0; i < 10; i++) {
-//     console.log(i)
-// }
-// function logHello() {
-//     console.log('hello');
-// }
-// logHello()
-// logHello()
-
-// logHello()
-// logHello()
-// let cost;
-// const 
-// switch (subscription) {
-//     case 'free':
-//         cost = 0;
-//         break;
-//     case 'pro':
-//         cost = 100;
-//         break;
-//     case 'premium':
-//         cost = 1000;
-//         break;
-//         default:
-//         console.log(subscription);
-// }
-if(browser == 'Edge') {
-    p.textContent = "You've got the Edge!";
-  } else if (browser == 'Chrome'
-   || browser == 'Firefox'
-   || browser == 'Safari'
-   || browser == 'Opera') {
-    p.textContent = 'Ми підтримуємо і ці браузери' ;
-  } else {
-    p.textContent =  'Маємо надію, що ця сторінка виглядає добре!' ;
-  }
- 
+// ПЯТЕ ЗАВДАННЯ
