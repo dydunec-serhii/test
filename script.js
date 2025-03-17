@@ -92,3 +92,82 @@
 //     break;
 // }
 // ПЯТЕ ЗАВДАННЯ
+// let  counter = 0;
+// while (counter < 10) {
+//    console.log(counter);
+//     counter += 1;
+// }
+// let password = '123';
+// do {
+//     password = prompt('your password')
+// } while (password.length < 5) {
+//     console.log('суперр!' , password);
+// } 
+
+// let a = 0;
+// let b = 0;
+// while (a < gray.length) {
+//     b += gray[a];
+//     a += 1;
+// }
+// rest = b / gray.length;
+// if (rest < 7) {
+//     console.log('job dont');
+// }
+// console.log(rest);
+// let total = 0;
+// let gray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const max = 10;
+// for (let i = 1; i < max; i++) {
+//     total += gray[i]
+// }
+// console.log(total);
+// const num = 10;
+// for (let index = 0; index < num; index++) {
+//     if (index % 2 === 0) {
+//         continue;
+//     }
+//     console.log(index);
+// }
+// const text = prompt('введіть число більше 100');
+// if (text < 100) {
+//     console.log('введіть число більше 100 !!!!');
+// } else {
+//     console.log('все класно');
+// }
+// const text2 = prompt('введіть число більше 100');
+// do {
+// text2 < 100;
+// console.log('введіть число більше 100!!!!');
+// } while (text2) {
+//     console.log('все топово');
+// }
+// let text = prompt('введіть число більше 100');
+// while (Number(text) < 100) {
+//     text = prompt('введіть число більше 100');
+// }
+// console.log('все чудово!');
+// const employees = 5;
+// let totalSalary = 0;
+// for (let i = 1; i <= employees; i++) {
+//     let selery =  Math.random() * (5000 - 500 + 1);
+//     totalSalary += selery;
+//     console.log(`Працівник ${i}: ${salary} грн`);
+// }
+// console.log(`Загальна сума зарплат: ${totalSalary} грн`);
+// Кількість працівників
+// const employees = 10;
+// let totalSalary = 0;
+// for (let i = 1; i <= employees; i++) {
+//     let salary = Math.floor(Math.random() * (5000 - 500 + 1)) + 500;
+//     totalSalary += salary;
+
+//     console.log(`Працівник ${i}: ${salary} грн`);
+// }
+// console.log(`Загальна сума зарплат: ${totalSalary} грн`);
+
+let i = 1;
+while (i <= 10) {
+    console.log(i);
+    i++
+}
