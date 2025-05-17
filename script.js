@@ -166,8 +166,38 @@
 // }
 // console.log(`Загальна сума зарплат: ${totalSalary} грн`);
 
-let i = 1;
-while (i <= 10) {
-    console.log(i);
-    i++
-}
+// let i = 1;
+// while (i <= 10) {
+//     console.log(i);
+//     i++
+// }
+// let nume = 20;
+// for (let i = 0; i < nume; i++) {
+//     if (i % 2 === 0) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+// let add = 7;
+// for (let i = 0; i <= 10;  i++) {
+//   add * i;
+//   console.log(add * i);
+// }
+// let n = 25;
+// for (let i = 1; i <= 30; i++) {
+//    if (i >= n) {
+//     break;
+//    }
+//     console.log(i);
+// }
+// let i = 1;
+// while (i <= 20) {
+//     if ( i % 3 === 0) {
+//         i++;
+//         continue;
+//     }
+//     console.log(i);
+//     i++
+// }
+const text1 = prompt('введіть ваш текст!');
+const text2 = prompt('введіть ваш текст!');
