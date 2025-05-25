@@ -293,16 +293,38 @@
 //   };
 
 //   console.log(getUserNames(users));
-function calculateTotalPrice(allProdcuts, productName) {
-    const Products = [
-        { name: 'apple', prise: 120, quality: 4 },
-        { name: 'banana', prise: 220, quality: 4 },
-        { name: 'coconad', prise: 100, quality: 4 },
-        { name: 'cucumber', prise: 320, quality: 4 }
-    ]
-    for (let i = 0; i < Products.length; i++) {
-        const al = Products[i] * Products.quality;
+// function calculateTotalPrice(allProdcuts, productName) {
+//     const Products = [
+//         { name: 'apple', prise: 120, quality: 4 },
+//         { name: 'banana', prise: 220, quality: 4 },
+//         { name: 'coconad', prise: 100, quality: 4 },
+//         { name: 'cucumber', prise: 320, quality: 4 }
+//     ]
+//     for (let i = 0; i < Products.length; i++) {
+//         const al = Products[i] * Products.quality;
+//     }
+//     return al;
+// }
+// console.log(calculateTotalPrice(Products));
+// const people = {
+//     color: 'dark',
+//     hand: true,
+//     leg: true,
+//     age: 19,
+//     input() {
+//         console.log(`мені ${this.age} і я лох`);
+//     }
+// }
+// people.input()
+class Human {
+    constructor(legs, arms, colorOfeyes, fingers, colorOfHair) {
+        this.legs = legs;
+        this.arms = arms;
+        this.colorOfeyes = colorOfeyes;
+        this.fingers = fingers;
+        this.colorOfHair = colorOfHair;
     }
-    return al;
+    speak() {
+        console.log(`i am have fifty ${this.legs}`);
+    }
 }
-console.log(calculateTotalPrice(Products));
