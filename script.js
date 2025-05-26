@@ -316,15 +316,55 @@
 //     }
 // }
 // people.input()
-class Human {
-    constructor(legs, arms, colorOfeyes, fingers, colorOfHair) {
-        this.legs = legs;
-        this.arms = arms;
-        this.colorOfeyes = colorOfeyes;
-        this.fingers = fingers;
-        this.colorOfHair = colorOfHair;
-    }
-    speak() {
-        console.log(`i am have fifty ${this.legs}`);
+// class Human {
+//     constructor(legs, arms, colorOfeyes, fingers, colorOfHair) {
+//         this.legs = legs;
+//         this.arms = arms;
+//         this.colorOfeyes = colorOfeyes;
+//         this.fingers = fingers;
+//         this.colorOfHair = colorOfHair;
+//     }
+//     speak() {
+//         console.log(`i am have fifty ${this.legs}`);
+//     }
+// }
+// const romasik = new Human(2, 2, 'red', 65, 'blue')
+// console.log(romasik);
+// romasik.speak()
+// class romeo {
+//     constructor({ name, robota, legs }) {
+//         this.name = name;
+//         this.robota = robota;
+//         this.legs = legs;
+//     }
+// }
+// const ecxempltar = new romeo({ name: 'romasik', robota: 'prostityt', legs: 2 })
+// console.log(ecxempltar);
+// class Person {
+//     constructor({ firstName, lastName }) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//     }
+//     getFullName() {
+//         return ` ${this.firstName} ${this.lastName} `
+//     }
+// }
+// const person1 = new Person({ firstName: 'John', lastName: 'Doe' });
+// console.log(person1.getFullName()); // John Doe
+// class Rectangle {
+//     constructor({ width, height }) {
+//         this.width = width;
+//         this.height = height;
+//     }
+//     getArea() {
+//         return `${this.width * this.height}`;
+//     }
+// }
+// const rectangle1 = new Rectangle({ width: 10, height: 5 });
+// // 50
+// console.log(rectangle1.getArea());
+class  Calculator {
+    Calculator({add(), subtract(), multiply(), divide().}) {
+        
     }
 }
