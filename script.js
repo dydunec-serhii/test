@@ -363,8 +363,9 @@
 // const rectangle1 = new Rectangle({ width: 10, height: 5 });
 // // 50
 // console.log(rectangle1.getArea());
-class  Calculator {
-    Calculator({add(), subtract(), multiply(), divide().}) {
+// class  Calculator {
+//     Calculator({}) {
         
-    }
-}
+//     }
+// }
+document
