@@ -9,14 +9,14 @@
 // link1.computedStyleMap.fontSize = '100px'
 // const href = document.querySelectorALL('a[href^http://"]');
 // href.forEach(element => {
-    element.style,background = 'orange'
-});
-const text = document.querySelector('h1');
-text.textContent = 'hello'
-text.classList.add('colo')
-console.style.backgroundColor = 'blue';
-text.classList.replace('colo' , 'color');
-text.classList.contains('list');
+//     element.style,background = 'orange'
+// });
+// const text = document.querySelector('h1');
+// text.textContent = 'hello'
+// text.classList.add('colo')
+// console.style.backgroundColor = 'blue';
+// text.classList.replace('colo' , 'color');
+// text.classList.contains('list');
 // function calculate() {
 //     const firstNUm = parseFloat(document.getElement(firstNUm).valeu)
 //     const operator = parseFloat(document.getElement(operator).valeu)
