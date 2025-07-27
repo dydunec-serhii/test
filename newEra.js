@@ -1,43 +1,51 @@
-const text = document.querySelector('#p-id');
-text.textContent = 'traktor soy gyd';
-text.style.backgroundColor = 'red';
-const text1 = document.querySelector('.site-nav');
-text1.style.backgroundColor = 'red'
-const href = document.querySelector('a');
-href.classList.add('site-nav__link');
-const link1 = document.querySelector('a[href="https://"]')
-link1.computedStyleMap.fontSize = '100px'
-const href = document.querySelectorALL('a[href^http://"]');
-href.forEach(element => {
-    element.style,background = 'orange'
-});
-const text = document.querySelector('h1');
-text.textContent = 'hello'
-text.classList.add('colo')
-console.style.backgroundColor = 'blue';
-text.classList.replace('colo' , 'color');
-text.classList.contains('list');
-function calculate() {
-    const firstNUm = parseFloat(document.getElement(firstNUm).valeu)
-    const operator = parseFloat(document.getElement(operator).valeu)
-    const secNumn = parseFloat(document.getElement(secNumn).valeu)
-    let result;
-    switch (operator) {
-        case '+':
-            result = firstNUm + secNumn;
-            break;
-        case '-':
-            result = firstNUm - secNumn;
-        case '*':
-            result = firstNUm * secNumn;
-            break
-        case '/':
-            firstNUm / secNumn;
-            break
-        default:
-            result = 'невірна операція'
-            break;
+// const fir = document.getElementById('first');
+// const sec = document.getElementById('sec');
+// const thitd = document.getElementById('third');
+// fir.addEventListener('click', function (event) {
+//     const clicked = event.target
+//     alert('click')
+// })
+// sec.addEventListener('click', () => {
+//     alert('sec')
+// })
+// thitd.addEventListener('click', () => {
+//     alert('third')
+// })
 
-    }
-    document.getElement('result').textContent = result;
-}
+
+// const userList = document.getElementById('userList');
+
+// userList.addEventListener('click', function(event) {
+//      if (event.target.classList.contains('deleteButton')) {
+//         const li = event.target.closest('li');
+//        li.remove();
+//      }
+// })
+
+const taskForm = document.getElementById('taskForm');
+const newTask = document.getElementById('newTask');
+const taskList  = document.getElementById('addTask');
+// addTask.addEventListener('submit' , () => {
+//     newTask.textContent = '';
+//     newTask.style.color = 'red';
+// }) 
+taskForm.addEventListener('submit', function(event) {
+
+    const li = document.createElement('li');
+    li.textContent = taskText;
+    li.style.color = 'red';
+    taskList.appendChild(li); 
+
+});
+// Додати обробник події для додавання нового завдання
+// Заборонити стандартну поведінку форми
+
+
+     // Створити новий елемент завдання
+    
+    // Очистити поле введення
+    
+// Додати обробник події для видалення завдання
+
+
+// Додати обробник події для відмітки виконання завдання
