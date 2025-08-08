@@ -11,7 +11,7 @@
 // first.textContent = "привіт";
 // const text = document.createElement('h1');
 // console.log(text);
-const text = document.querySelector('#p-id');
+// const text = document.querySelector('#p-id');
 // text.textContent = 'traktor soy gyd';
 // text.style.backgroundColor = 'red';
 // const text1 = document.querySelector('.site-nav');
@@ -54,3 +54,43 @@ const text = document.querySelector('#p-id');
 //     }
 //     document.getElement('result').textContent = result;
 // }
+// const photo = document.querySelector('li');
+// photo.addEventListener('click', () => {
+// photo.body 
+// })
+// const images = document.querySelectorAll('.photos img');
+// const modal = document.getElementById('fullscreenModal');
+// const modalImage = document.getElementById('modalImage');
+// const closeModal = document.getElementById('closeModal');
+
+// images.forEach((img) => {
+//     img.addEventListener('click', () => {
+//         modalImage.src = img.src;
+//         modal.classList.add('show');
+//         modal.classList.remove('hidden');
+//     });
+// });
+
+// closeModal.addEventListener('click', () => {
+//     modal.classList.remove('show');
+//     modal.classList.add('hidden');
+// });
+
+// modal.addEventListener('click', (e) => {
+//     if (e.target === modal) {
+//         modal.classList.remove('show');
+//         modal.classList.add('hidden');
+//     }
+// });
+// const num = _.add(2,3)\
+const text = document.getElementById('inpu');
+function input(event) {
+    // console.log('запита до сервера');
+}
+document.addEventListener(
+    'input',
+    _.throttle(() => {
+        console.log('input event handler invocation every 500ms.');
+    }, 500),
+);
+// const input = _.throttle(input, 500);
