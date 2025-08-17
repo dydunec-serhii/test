@@ -83,14 +83,151 @@
 //     }
 // });
 // const num = _.add(2,3)\
-const text = document.getElementById('inpu');
-function input(event) {
-    // console.log('запита до сервера');
-}
-document.addEventListener(
-    'input',
-    _.throttle(() => {
-        console.log('input event handler invocation every 500ms.');
-    }, 500),
-);
+// const text = document.getElementById('inpu');
+// function input(event) {
+//     // console.log('запита до сервера');
+// }
+// document.addEventListener(
+//     'input',
+//     _.throttle(() => {
+//         console.log('input event handler invocation every 500ms.');
+//     }, 500),
+// );
 // const input = _.throttle(input, 500);
+// const sliser = [
+//     { src: './6.png' },
+//     { src: './5.png' },
+//     { src: './4.png' }
+// ]
+// let one = 0;
+// const div = document.getElementById('div-slider');
+// const prevBtn = document.getElementById('prev');
+// const nextBtn = document.getElementById('next');
+
+// function updateSlid() {
+//     const member = sliser[one];
+//     sliser.src = member.one;
+
+// }
+// prevBtn.addEventListener('click', () => {
+//     one = (one - 1) % sliser.length;
+//     updateSlid();
+// })
+// nextBtn.addEventListener('click', () => {
+//     one = (one + 1) % sliser.length;
+//     updateSlid();
+// })
+// updateSlid();
+
+// const sliser = [
+//     { src: './twoo.png' },
+//     { src: './onee.png' },
+//     { src: './twoo.png' }
+// ];
+
+// let index = 0; 
+// const div = document.getElementById('div-slider');
+// const prevBtn = document.getElementById('prev');
+// const nextBtn = document.getElementById('next');
+// const imgEl = document.getElementById('slideImg');
+
+// function updateSlide() {
+//     const member = sliser[index];
+//     imgEl.src = member.src;
+//     imgEl.alt = `Slide ${index + 1}`;
+// }
+
+// prevBtn.addEventListener('click', () => {
+//     index = (index - 1 + sliser.length) % sliser.length;
+//     updateSlide();
+// });
+
+// nextBtn.addEventListener('click', () => {
+//     index = (index + 1) % sliser.length;
+//     updateSlide();
+// });
+
+// updateSlide();
+
+
+// const inpu = document.getElementById('input1');
+// const butt = document.getElementById('but');
+
+// function buttInp(event) {
+//     let result = event.target.value;
+//     console.log(result);
+// }
+// const boda = _.debounce(buttInp , 500);
+// inpu.addEventListener('input', boda);
+
+
+// butt.addEventListener('submit' , () => {
+//  let result = event.target.value;
+
+// })
+// const boda = _.debounce(result , 500)
+
+// function inpuFunc(event) {
+//     let result = event.target.value;
+//     console.log(result);
+// }
+
+// const trotInpu = _.throttle(inpuFunc, 5000);
+// inpu.addEventListener('input', trotInpu);
+
+
+
+// const target = document.getElementById('target');
+
+// const observer = new IntersectionObserver((entries) => entries.forEach(element => {
+//     if (element.isIntersecting) {
+//         element.target.classList.add('visible')
+
+//     } else {
+//         element.target.classList.remove('visible');
+//     }
+
+// }),
+//     { threshold: 0.5 }
+// );
+
+// observer.observe(target);
+
+// const div = document.getElementById('div-img');
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const img = document.querySelectorAll('.imgg');
+//     const observer = new IntersectionObserver((entries, observer) => entries.forEach(element => {
+//         if (element.isIntersecting && element.intersectionRatio >= 0.5) {
+//             let targ = element.target;
+//             targ.src = targ.dataset.src;
+//             targ.classList.add('visible');
+//             observer.unobserve(targ);
+//         }
+//     });
+// }, { threshold: 0.5 });
+
+// img.forEach(img => {
+//     observer.observe(img);
+// }) 
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.imgg');
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.add('visible');
+          console.log('srdsdrsdrsrr');
+          observer.unobserve(img);
+        }
+      });
+    }, { threshold: 0.5 });
+  
+    images.forEach(img => {
+      observer.observe(img);
+    });
+  });
+  
