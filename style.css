@@ -99,3 +99,8 @@ li {
 body {
     margin-top: 1000px;
 }
+div{
+    display: flex;
+    justify-content: center;
+   
+}

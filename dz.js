@@ -211,23 +211,42 @@
 // img.forEach(img => {
 //     observer.observe(img);
 // }) 
-document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.imgg');
-  
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-          const img = entry.target;
-          img.src = img.dataset.src;
-          img.classList.add('visible');
-          console.log('srdsdrsdrsrr');
-          observer.unobserve(img);
-        }
-      });
-    }, { threshold: 0.5 });
-  
-    images.forEach(img => {
-      observer.observe(img);
-    });
-  });
-  
+// document.addEventListener('DOMContentLoaded', () => {
+//     const images = document.querySelectorAll('.imgg');
+
+//     const observer = new IntersectionObserver((entries, observer) => {
+//       entries.forEach(entry => {
+//         if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+//           const img = entry.target;
+//           img.src = img.dataset.src;
+//           img.classList.add('visible');
+//           console.log('srdsdrsdrsrr');
+//           observer.unobserve(img);
+//         }
+//       });
+//     }, { threshold: 0.5 });
+
+//     images.forEach(img => {
+//       observer.observe(img);
+//     });
+//   });
+
+// import { nanoid } from "nanoid";
+// console.log(nanoid());
+// const id = nanoid(3);
+// console.log(id);
+
+// const taskInput = document.getElementById('taskInput');
+// const addTaskBtn = document.getElementById("addTaskBtn");
+// const taskList = document.getElementById('taskList');
+// const deletBut = document.getElementById('removeTaskBtn');
+// addTaskBtn.addEventListener('click', () => {
+//   const li = document.createElement('li');
+//   li.textContent = taskInput.value;
+//   li.style.color = 'red';
+//   taskList.appendChild(li)
+//   taskInput.value = '';
+// })
+// deletBut.addEventListener('click', () => {
+//   const li = document.removeChild('li');
+// })
